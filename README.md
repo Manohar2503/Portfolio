@@ -1,16 +1,54 @@
-# React + Vite
+# Manohar Jinka's Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a personal portfolio website showcasing my skills, experience, and projects as a full-stack developer.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Responsive Design:** Optimized for various screen sizes, from mobile to desktop.
+- **Interactive UI:** Built with React.js and Framer Motion for smooth animations and transitions.
+- **Dynamic Content:** Sections for About, Experience, Projects, Skills, and Contact.
+- **Customizable Theme:** Easily modifiable color palette using Tailwind CSS.
+- **Gradient Image Border:** Unique "water floating style" gradient border around the profile image.
 
-## React Compiler
+## Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Frontend:**
+  - React.js
+  - Tailwind CSS
+  - Framer Motion (for animations)
+  - React-Scroll (for smooth navigation)
+  - Heroicons (for UI icons)
+  - React-Icons (for social media icons)
+- **Build Tool:**
+  - Vite
 
-## Expanding the ESLint configuration
+## Setup Instructions
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+To run this project locally, follow these steps:
+
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/Manohar2503/your-portfolio-repo.git
+    cd your-portfolio-repo
+    ```
+    *(Note: Replace `your-portfolio-repo` with the actual repository name if it's different.)*
+
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
+
+3.  **Start the development server:**
+    ```bash
+    npm run dev
+    ```
+
+    The application will be accessible at `http://localhost:5174/` (or another available port).
+
+## Contact
+
+Feel free to reach out to me through:
+
+-   **Email:** manoharjinka02@gmail.com
+-   **LinkedIn:** [Manohar Jinka](https://www.linkedin.com/in/manoharJinka)
+-   **GitHub:** [Manohar2503](https://github.com/Manohar2503)
