@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #1A202C;
+    --foreground: #EDF2F7;
+
+    --card: #2D3748;
+    --card-foreground: #EDF2F7;
+
+    --popover: #2D3748;
+    --popover-foreground: #EDF2F7;
+
+    --primary: #66FCF1;
+    --primary-foreground: #1A202C;
+
+    --secondary: #A0AEC0;
+    --secondary-foreground: #1A202C;
+
+    --muted: #A0AEC0;
+    --muted-foreground: #2D3748;
+
+    --accent: #66FCF1;
+    --accent-foreground: #1A202C;
+
+    --destructive: #EF4444; /* Example red for destructive actions */
+    --destructive-foreground: #EDF2F7;
+
+    --border: #2D3748;
+    --input: #2D3748;
+    --ring: #66FCF1;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: #1A202C;
+    --foreground: #EDF2F7;
+
+    --card: #2D3748;
+    --card-foreground: #EDF2F7;
+
+    --popover: #2D3748;
+    --popover-foreground: #EDF2F7;
+
+    --primary: #66FCF1;
+    --primary-foreground: #1A202C;
+
+    --secondary: #A0AEC0;
+    --secondary-foreground: #1A202C;
+
+    --muted: #A0AEC0;
+    --muted-foreground: #2D3748;
+
+    --accent: #66FCF1;
+    --accent-foreground: #1A202C;
+
+    --destructive: #EF4444;
+    --destructive-foreground: #EDF2F7;
+
+    --border: #2D3748;
+    --input: #2D3748;
+    --ring: #66FCF1;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-[--border];
+  }
+  body {
+    @apply bg-[--background] text-[--foreground];
+  }
+}
+
+.gradient-border {
+  position: relative;
+  padding: 8px; /* Increased border thickness */
+  border-radius: 9999px; /* For a circular border */
+  background: linear-gradient(to right, var(--background) 0%, var(--background) 50%, #66FCF1 75%, #00c6ff 100%);
+  background-size: 200% 100%;
+  animation: gradient-animation 5s ease infinite alternate;
+}
+
+.gradient-border::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  background: var(--background);
+  z-index: -1;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
